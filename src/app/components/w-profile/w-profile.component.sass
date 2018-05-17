@@ -1,0 +1,72 @@
+@import '../../../styles.sass'
+
+.profile
+    overflow: hidden
+    margin: 20px auto
+    .profWallImg
+        img
+            width: 100%
+            height: auto
+    .profUser
+        padding: 23px
+        width: 100%
+        display: flex
+        flex-flow: row wrap
+        .profImg
+            border: 2px solid #d6d1cd
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            padding: 7px
+            img
+                width: 100%
+                border-radius: 50%
+        .profInfo
+            width: calc(100% - 90px)
+            padding-left: 20px
+            h2
+                font-size: 28px
+                font-weight: 600
+                margin-bottom: 13px
+            p
+                font-size: 13px
+
+    .profDataInfo
+        background: #f6f1ed
+        width: 100%
+        display: flex
+        flex-flow: row wrap
+        .itemInfo
+            width: 33.333%
+            font-weight: 700
+            text-align: center
+            padding: 20px 0
+            border-right: 2px solid $wt
+            cursor: pointer
+            transition: all .3s ease-in-out
+            i
+                &:before
+                    display: inline-block
+                    vertical-align: middle
+                    font-family: 'app-icon' !important
+                    font-size: 20px
+                    margin-right: 5px
+
+                &.views-ico
+                    &:before
+                        content: "\e902"
+                &.messages-ico
+                    &:before
+                        content: "\e96b"
+                &.likes-ico
+                    &:before
+                         content: "\f004"
+            &:hover
+                color: #e26f4d
+
+
+            >div.itemInfo
+            &:last-child
+                border-right: none
+        
+
