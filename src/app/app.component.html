@@ -1,4 +1,13 @@
-<app-w-contact-form></app-w-contact-form>
-<app-w-datatransfer></app-w-datatransfer>
-<app-w-profile></app-w-profile>
-<app-w-statistics></app-w-statistics>
+<h2 class="lang-title">Choose your language</h2>
+
+<div class="switchLang">
+    <div class="langBT" (click)="langSwitch('english')"><i class="flag eng"></i><span>English</span></div>
+    <div class="langBT" (click)="langSwitch('spanish')"><i class="flag esp"></i><span>Spanish</span></div>
+</div>
+
+<div class="widgets-content">
+    <app-w-datatransfer class="app" [dataLang]="currentLang" ></app-w-datatransfer>
+    <app-w-contact-form class="app" [dataLang]="currentLang"></app-w-contact-form>
+    <app-w-profile class="app"></app-w-profile>
+    <app-w-statistics class="app" [dataLang]="currentLang"></app-w-statistics>
+</div>

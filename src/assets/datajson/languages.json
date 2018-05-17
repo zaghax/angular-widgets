@@ -1,0 +1,60 @@
+{
+    "english": {
+
+        "contactForm":{
+            "labelCtc": "Contacts",
+            "labelSub": "Subject",
+            "placeSub": "You can add a subject",
+            "labelMess": "Message",
+            "placeMess": "Leave your messages here",
+            "labelCheck": "Save a Copy",
+            "btnSend": "Send Mail"
+        },
+        "dataTransfer":{
+            "labelTab1": "Diagram Stats",
+            "labelTab2": "Month Report",
+            "titleTab1": "Data Transfer",
+            "mediaItem1": "Audio",
+            "mediaItem2": "Video",
+            "mediaItem3": "Photo",
+            "toolItem1": "Upload Files",
+            "toolItem2": "Share Link",
+            "toolItem3": "Back Up"
+        },
+        "statistics":{
+            "labelToday": "Today",
+            "labelShares": "Shares Traded",
+            "labelMarket": "Market Cap",
+            "labelYear": "Yearly Change"
+        }
+    },
+    "spanish":{
+        "contactForm":{
+            "labelCtc": "Contactos",
+            "labelSub": "Asunto",
+            "placeSub": "Puedes agregar un asunto",
+            "labelMess": "Mensaje",
+            "placeMess": "Deja tus mensajes aquí",
+            "labelCheck": "Guardar una copia",
+            "btnSend": "Enviar Correo"
+        },
+        "dataTransfer":{
+            "labelTab1": "Diagrama de estadisticas",
+            "labelTab2": "Reporte mesual",
+            "titleTab1": "Transferencia de datos",
+            "mediaItem1": "Audio",
+            "mediaItem2": "Video",
+            "mediaItem3": "Fotos",
+            "toolItem1": "Subir Archivos",
+            "toolItem2": "Compartir",
+            "toolItem3": "Copia seguridad"
+        },
+        "statistics":{
+            "labelToday": "Hoy",
+            "labelShares": "Acciones negociadas",
+            "labelMarket": "Capitalizacion del Mercado",
+            "labelYear": "Cambio Anual"
+        }
+    }
+    
+}

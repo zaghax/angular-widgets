@@ -8,7 +8,7 @@ import 'rxjs/add/operator/map';
 
 export class DataWidgetsService {
 
-  url:string = './dataJson/';
+  url:string = '../../assets/datajson/';
 
   constructor(private dataPresiService:Http) {}
 

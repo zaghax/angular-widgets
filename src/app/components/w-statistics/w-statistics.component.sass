@@ -1,0 +1,93 @@
+.statistics
+    overflow: hidden
+    .head
+        .st-wall
+            min-height: 150px
+            background: #54bc76
+            width: 100%
+            .data-num
+                padding: 10px
+                span
+                    display: block
+                .data-1
+                    font-size: toRem(24)
+                    color: $wt
+                .data-2
+                    font-size: toRem(14)
+                    color: rgba(255,255,255,0.5)
+    .content-body
+        padding: 20px
+        .info
+            .date-time
+                font-size: toRem(14)
+            .location
+                font-size: toRem(20)
+                font-weight: 600
+        .market
+            background: #f6f0ec
+            display: flex
+            flex-flow: row wrap
+            border-radius: 5px
+            overflow: hidden
+            margin: 20px 0
+            .m-item
+                width: 50%
+                display: flex
+                flex-flow: column wrap
+                justify-content: center
+                align-items: center
+                border-right: 1px solid $wt
+                padding: 20px 0
+                text-align: center
+                .num
+                    font-size: toRem(18)
+                    font-weight: 600
+                .text
+                    font-size: toRem(12)
+                    font-weight: 400
+
+            >.m-item
+                &:last-child
+                    border-right: none
+
+
+        .market-2
+            display: flex
+            flex-flow: row wrap
+            .m2-item
+                width: 50%
+                .title
+                    font-size: toRem(14)
+                    margin-bottom: 10px
+                    display: block
+                .bars
+                    display: flex
+                    flex-flow: row nowrap
+                    justify-content: space-between
+                    .bar
+                        height: 40px
+                        width: 10px
+                        background: #f6f0ed
+                        position: relative
+                        .fill-bar
+                            position: absolute
+                            width: 100%
+                            bottom: 0
+                            left: 0
+                        &.red
+                            .fill-bar
+                                background: #e55f3b
+
+                        &.green
+                            .fill-bar
+                                background: #4daf7b
+
+                .numHigh
+                    background: #4daf7b
+                    color: $wt
+                    text-align: center
+                    font-size: toRem(18)
+                    padding: 10px 0
+                    border-radius: 5px
+                &.m2
+                    padding-left: 20px

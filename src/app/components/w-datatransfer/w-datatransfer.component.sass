@@ -1,48 +1,71 @@
-@import '../../../styles.sass'
-
-
 .datatransfer
     overflow: hidden
     margin: 20px auto
+    background: transparent !important
     .tabs
         ul
             list-style: none
             display: flex
             flex-flow: row wrap
+            justify-content: space-between
             li
-                width: 50%
+                width: 49.5%
                 text-align: center
                 font-weight: 700
-                padding: 20px 0
+                min-height: 50px 
                 font-size: 15px
-    .tab-contents
-        .tabContent
-            .dataPie
-                padding: 20px
-                h2.title
-                    font-size: 15px
-                    text-transform: uppercase
-                    width: 100%
-                    text-align: center
-                    font-weight: 700
-            .pie
-                width: 230px
-                height: 230px
-                margin: 20px auto
+                color: $wt
+                cursor: pointer
+                border: 1px solid $wt
+                border-bottom: none
+                border-radius: 10px 10px 0 0
                 display: flex
-                flex-flow: column wrap
+                flex-flow: row wrap
+                justify-content: center
+                align-items: center 
+                &.active
+                    background: $wt
+                    color: $font
+    .tab-contents
+        background: $wt
+        
+        .tabContent
+            min-height: 522px
+            &.pane1
+                .dataPie
+                    padding: 20px
+                    h2.title
+                        font-size: 15px
+                        text-transform: uppercase
+                        width: 100%
+                        text-align: center
+                        font-weight: 700
+                .pie
+                    width: 230px
+                    height: 230px
+                    margin: 20px auto
+                    display: flex
+                    flex-flow: column wrap
+                    justify-content: center
+                    align-items: center
+                    border-radius: 50%
+                    border: 5px solid red
+                    .files
+                        font-size: 14px
+                        font-weight: 700
+                        color: #e55e3a
+                    .size
+                        font-size: 33px
+                        font-weight: 700
+                        color: #8e8071
+            &.pane2
+                display: flex
+                flex-flow: row wrap
                 justify-content: center
                 align-items: center
-                border-radius: 50%
-                border: 5px solid red
-                .files
-                    font-size: 14px
+                .warn
+                    font-size: 20px
                     font-weight: 700
-                    color: #e55e3a
-                .size
-                    font-size: 33px
-                    font-weight: 700
-                    color: #8e8071
     .data-files
         display: flex
         flex-flow: row wrap

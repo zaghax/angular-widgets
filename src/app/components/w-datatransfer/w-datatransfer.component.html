@@ -1,17 +1,17 @@
 <div class="datatransfer wrapper">
   <div class="tabs">
     <ul>
-      <li>Diagram Stats</li>
-      <li>Month Report</li>
+      <li (click)="tabs = 'TAB_A'" [ngClass]="{'active' : tabs == 'TAB_A' }"><span>{{dataLang?.dataTransfer.labelTab1}}</span></li>
+      <li (click)="tabs = 'TAB_B'" [ngClass]="{'active' : tabs == 'TAB_B' }" ><span>{{dataLang?.dataTransfer.labelTab2}}</span></li>
     </ul>
   </div>
 
-  <div class="tab-contents">
+  <div class="tab-contents" [ngSwitch]="tabs">
 
-    <div class="tabContent">
+    <div class="tabContent pane1" *ngSwitchCase="'TAB_A'">
 
       <div class="dataPie">
-        <h2 class="title">Data Transfer</h2>
+        <h2 class="title">{{dataLang?.dataTransfer.titleTab1}}</h2>
         <div class="pie">
           <span class="files">2.435 files</span>
           <span class="size">45 Gb</span>
@@ -20,15 +20,15 @@
 
       <div class="data-files">
         <div class="item audio">
-          <span class="item-name">Audio</span>
+          <span class="item-name">{{dataLang?.dataTransfer.mediaItem1}}</span>
           <span class="item-count">55%</span>
         </div>
         <div class="item video">
-          <span class="item-name">Video</span>
+          <span class="item-name">{{dataLang?.dataTransfer.mediaItem2}}</span>
           <span class="item-count">23%</span>
         </div>
         <div class="item photo">
-          <span class="item-name">Photo</span>
+          <span class="item-name">{{dataLang?.dataTransfer.mediaItem3}}</span>
           <span class="item-count">17%</span>
         </div>
       </div>
@@ -36,22 +36,23 @@
       <div class="data-actions">
         <div class="item upload active">
           <i class="icon cloud-ico"></i>
-          <span class="text">Upload Files</span>
+          <span class="text">{{dataLang?.dataTransfer.toolItem1}}</span>
         </div>
         <div class="item share">
           <i class="icon share-ico"></i>
-          <span class="text">Share Link</span>
+          <span class="text">{{dataLang?.dataTransfer.toolItem2}}</span>
         </div>
         <div class="item backup">
           <i class="icon back-ico"></i>
-          <span class="text">Back Up</span>
+          <span class="text">{{dataLang?.dataTransfer.toolItem3}}</span>
         </div>
       </div>
 
     </div>
 
-    <div class="tabContent">
-      <p>Content Pending</p>
+    <div class="tabContent pane2" *ngSwitchCase="'TAB_B'">
+      <p class="warn">Pending Content</p>
     </div>
+
   </div>
 </div>
