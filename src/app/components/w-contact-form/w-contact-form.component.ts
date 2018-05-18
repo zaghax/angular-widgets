@@ -7,6 +7,7 @@ import { Component, OnInit, Input, SimpleChange } from '@angular/core';
 export class WContactFormComponent implements OnInit {
 
   @Input() dataLang;
+  @Input() dataW;
 
   constructor() { }
 

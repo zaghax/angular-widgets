@@ -1,31 +1,31 @@
 <div class="profile wrapper">
   
   <div class="profWallImg">
-    <img src="assets/img/img-banner.jpg" />
+    <img [src]="dataW?.profileBann" />
   </div>
 
   <div class="profUser">
 
     <div class="profImg">
-      <img src="assets/img/img-user.png"/>
+      <img [src]="dataW?.profileImg"/>
     </div>
 
     <div class="profInfo">
-      <h2>Norah Jones</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h2>{{dataW?.name}}</h2>
+      <p>{{dataW?.desc}}</p>
     </div>
 
   </div>
 
   <div class="profDataInfo">
     <div class="itemInfo">
-      <i class="views-ico"></i><span>172</span>
+      <i class="views-ico"></i><span>{{dataW?.views}}</span>
     </div>
     <div class="itemInfo">
-      <i class="messages-ico"></i><span>34</span>
+      <i class="messages-ico"></i><span>{{dataW?.messages}}</span>
     </div>
     <div class="itemInfo">
-      <i class="likes-ico"></i><span>210</span>
+      <i class="likes-ico"></i><span>{{dataW?.likes}}</span>
     </div>
       
   </div>

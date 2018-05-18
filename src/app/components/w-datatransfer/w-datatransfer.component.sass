@@ -22,7 +22,9 @@
                 display: flex
                 flex-flow: row wrap
                 justify-content: center
-                align-items: center 
+                align-items: center
+                +trans
+                &:hover, 
                 &.active
                     background: $wt
                     color: $font
@@ -107,15 +109,16 @@
             font-size: 10px
             font-weight: bold
             color: $wt
+            cursor: pointer
+            +trans
             .text
                 text-transform: uppercase
-            &.active
-                background: #64584c
             i
                 display: block
                 width: 100%
                 text-align: center
                 margin-bottom: 5px
+                +trans
                 &:before
                     display: inline-block
                     vertical-align: middle
@@ -131,6 +134,10 @@
                 &.back-ico
                     &:before
                         content: "\e901"
+            &:hover
+                background: #64584c
+                i
+                    transform: translateY(-10%)
 
 
 

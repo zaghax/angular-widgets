@@ -6,8 +6,8 @@
 </div>
 
 <div class="widgets-content">
-    <app-w-datatransfer class="app" [dataLang]="currentLang" ></app-w-datatransfer>
-    <app-w-contact-form class="app" [dataLang]="currentLang"></app-w-contact-form>
-    <app-w-profile class="app"></app-w-profile>
-    <app-w-statistics class="app" [dataLang]="currentLang"></app-w-statistics>
+    <app-w-datatransfer class="app" [dataLang]="currentLang" [dataW]="dataWtrans"></app-w-datatransfer>
+    <app-w-contact-form class="app" [dataLang]="currentLang" [dataW]="contactForm"></app-w-contact-form>
+    <app-w-profile class="app" [dataW]="dataWprof"></app-w-profile>
+    <app-w-statistics class="app" [dataLang]="currentLang" [dataW]="dataWstat"></app-w-statistics>
 </div>

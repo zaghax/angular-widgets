@@ -10,6 +10,10 @@ export class AppComponent implements OnInit{
 
   langs:any;
   currentLang:any;
+  dataWtrans:any;
+  dataWprof:any;
+  dataWstat:any;
+  dataWform:any;
 
   constructor(private dataLang:DataWidgetsService){ }
   
@@ -21,6 +25,19 @@ export class AppComponent implements OnInit{
         this.langs = data;
         this.currentLang = data.english;
       }
+
+    );
+
+    this.dataLang.getService('data-widgets.json').subscribe(
+      
+      (data) =>{
+        this.dataWtrans = data.dataTransfer;
+        this.dataWprof = data.profile;
+        this.dataWstat = data.statistics;
+        this.dataWform = data.contactForm;
+      }
+
+     
 
     );
   }

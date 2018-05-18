@@ -13,23 +13,23 @@
       <div class="dataPie">
         <h2 class="title">{{dataLang?.dataTransfer.titleTab1}}</h2>
         <div class="pie">
-          <span class="files">2.435 files</span>
-          <span class="size">45 Gb</span>
+          <span class="files">{{dataW?.dataT.files}} files</span>
+          <span class="size">{{dataW?.dataT.size}}</span>
         </div>
       </div>
 
       <div class="data-files">
         <div class="item audio">
           <span class="item-name">{{dataLang?.dataTransfer.mediaItem1}}</span>
-          <span class="item-count">55%</span>
+          <span class="item-count">{{dataW?.media.audio}}%</span>
         </div>
         <div class="item video">
           <span class="item-name">{{dataLang?.dataTransfer.mediaItem2}}</span>
-          <span class="item-count">23%</span>
+          <span class="item-count">{{dataW?.media.video}}%</span>
         </div>
         <div class="item photo">
           <span class="item-name">{{dataLang?.dataTransfer.mediaItem3}}</span>
-          <span class="item-count">17%</span>
+          <span class="item-count">{{dataW?.media.photo}}%</span>
         </div>
       </div>
 

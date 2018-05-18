@@ -1,0 +1,65 @@
+{
+    "contactForm":{
+        "contacts":[
+            {
+                "contact": "Hello@me.com"
+            },
+            {
+                "contact": "Andy@me.com"
+            },
+            {
+                "contact": "gio@gio.com"
+            }
+        ]
+    },
+    "dataTransfer":{
+        "dataT":{
+            "files": 2435,
+            "size": "45 Gb",
+            "pie": [
+                {
+                    "type": "audio",
+                    "size": 55
+                }
+                ,
+                {
+                    "type": "video",
+                    "size": 23
+                },
+                {
+                    "type": "photo",
+                    "size": 17
+                },
+                {
+                    "type": "free",
+                    "size": 5
+                }
+            ]
+        },
+        "media":{
+            "audio": 55,
+            "video": 23,
+            "photo": 17
+        }
+    },
+    "statistics":{
+        "charData1": 634.39,
+        "charData2": "+2.18(3.71%)",
+        "date": "today",
+        "time": "2:25 P.M.",
+        "location": "Salt Lake City, Utah",
+        "shares": "13.5 M",
+        "market": "28.44 B",
+        "yearCh": "+127.01"
+    },
+    "profile":{
+        "name": "Norah Jones",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "views": 172,
+        "messages": 34,
+        "likes": 210,
+        "profileImg": "assets/img/img-user.png",
+        "profileBann": "assets/img/img-banner.jpg"
+        
+    }
+}

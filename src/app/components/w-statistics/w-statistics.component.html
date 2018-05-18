@@ -2,23 +2,23 @@
   <div class="head">
     <div class="st-wall">
       <div class="data-num">
-        <span class="data-1">634.39</span>
-        <span class="data-2">+2.18(3.71%)</span>
+        <span class="data-1">{{dataW?.charData1}}</span>
+        <span class="data-2">{{dataW?.charData2}}</span>
       </div>
     </div>
   </div>
   <div class="content-body">
     <div class="info">
-      <div class="date-time">{{dataLang?.statistics.labelToday}} 2:25 <span>PM</span></div>
-      <div class="location">Salt Lake City, Utah</div>
+      <div class="date-time">{{dataLang?.statistics.labelToday}} {{dataW?.time}}</div>
+      <div class="location">{{dataW?.location}}</div>
     </div>
     <div class="market">
       <div class="m-item">
-        <span class="num">13.5 M</span>
+        <span class="num">{{dataW?.shares}}</span>
         <span class="text">{{dataLang?.statistics.labelShares}}</span>
       </div>
       <div class="m-item">
-          <span class="num">28.44 B</span>
+          <span class="num">{{dataW?.market}}</span>
           <span class="text">{{dataLang?.statistics.labelMarket}}</span>
         </div>
     </div>
@@ -38,7 +38,7 @@
       </div>
       <div class="m2-item m2">
         <span class="title">{{dataLang?.statistics.labelYear}}</span>
-        <div class="numHigh"><span>+</span>127.01</div>
+        <div class="numHigh">{{dataW?.yearCh}}</div>
       </div>
     </div>
   </div>

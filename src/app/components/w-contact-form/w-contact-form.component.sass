@@ -55,6 +55,7 @@
                         position: absolute
                         right: 5px
                         top: 5px
+                        +trans
                         &:before
                             content: "\e904"
                             font-family: 'app-icon'
@@ -64,6 +65,10 @@
                             left: 50%
                             top: 49%
                             transform: translate(-50% , -50%)
+                            +trans
+                        +breakpoint($desktop)
+                            &:hover
+                                background: #4daf7b
 
         .actions
             background: #f8f3f0
@@ -107,13 +112,19 @@
                     padding: 10px
                     border-radius: 5px
                     font-size: toRem(12)
+                    cursor: pointer
+                    +trans
                     .arrow
                         width: 19px
                         height: 19px
                         border-radius: 50%
                         display: inline-block
                         vertical-align: middle
-                        margin-right: 15px
+                        margin-right: 10px
                         background: #dd492a url('data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU4IDM4Ni4yNTgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTggMzg2LjI1ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9Ijk2Ljg3OSwwIDk2Ljg3OSwzODYuMjU4IDI4OS4zNzksMTkzLjEyOSAiIGZpbGw9IiNGRkZGRkYiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==') center center no-repeat
                         background-size: 30%
-                
+                    +breakpoint($desktop)
+                        &:hover
+                            background: $wt
+                            color: #e96d48
+
