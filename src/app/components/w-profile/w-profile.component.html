@@ -1,13 +1,13 @@
 <div class="profile wrapper">
   
   <div class="profWallImg">
-    <img [src]="dataW?.profileBann" />
+    <img [src]="dataW?.profileBann" *ngIf="dataW?.profileBann" />
   </div>
 
   <div class="profUser">
 
     <div class="profImg">
-      <img [src]="dataW?.profileImg"/>
+      <img [src]="dataW?.profileImg" *ngIf="dataW?.profileBann"/>
     </div>
 
     <div class="profInfo">
