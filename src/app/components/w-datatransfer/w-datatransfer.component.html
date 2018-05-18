@@ -12,9 +12,16 @@
 
       <div class="dataPie">
         <h2 class="title">{{dataLang?.dataTransfer.titleTab1}}</h2>
-        <div class="pie">
-          <span class="files">{{dataW?.dataT.files}} files</span>
-          <span class="size">{{dataW?.dataT.size}}</span>
+        
+        <div class="pieChart" *ngIf="print">
+          <div class="pie">
+            <span class="files">{{dataW?.dataT.files}} files</span>
+            <span class="size">{{dataW?.dataT.size}}</span>
+          </div>
+          <canvas class="chart" baseChart width="230" height="230"
+                  [data]="doughnutChartData"
+                  [colors]="doughnutChartColors"
+                  [chartType]="doughnutChartType"></canvas>
         </div>
       </div>
 

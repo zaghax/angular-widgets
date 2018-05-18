@@ -11,6 +11,10 @@ import { WContactFormComponent } from './components/w-contact-form/w-contact-for
 
 import { DataWidgetsService } from './services/data-widgets.service';
 
+//Graphics 
+
+import { ChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +26,8 @@ import { DataWidgetsService } from './services/data-widgets.service';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    ChartsModule
   ],
   providers: [DataWidgetsService],
   bootstrap: [AppComponent]

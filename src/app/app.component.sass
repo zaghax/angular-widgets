@@ -29,6 +29,18 @@ $desktop: min-width 1025px
 	$remy: ($sizeValue / 16)+rem
 	@return $remy
 
+//Funcion PX to VW Movil
+
+@function toVWM($target) 
+	$vw-context: (320 * 0.01) * 1
+	@return ($target / $vw-context) * 1vw
+
+//Funcion PX to VW Desktop
+
+@function toVW($target) 
+	$vw-context: (1920 * 0.01) * 1
+	@return ($target / $vw-context) * 1vw
+
 //Mixin
 =trans
     transition: all .25s ease-in-out
