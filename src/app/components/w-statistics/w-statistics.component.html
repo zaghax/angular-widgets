@@ -5,6 +5,11 @@
         <span class="data-1">{{dataW?.charData1}}</span>
         <span class="data-2">{{dataW?.charData2}}</span>
       </div>
+      <canvas baseChart width="300" height="150"
+              [datasets]="lineChartData"
+              [labels]="lineChartLabels"
+              [colors]="lineChartColors"
+              [chartType]="lineChartType"></canvas>
     </div>
   </div>
   <div class="content-body">
